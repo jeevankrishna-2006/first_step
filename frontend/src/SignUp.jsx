@@ -61,7 +61,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 to-blue-900 text-white font-sans  ">
+        <div className="min-h-screen bg-gradient-to-br bg-black text-white font-sans  ">
             <NavBar />
 
             <h1 className="text-5xl text-bold text-blue-500 flex justify-center m-15 ">JOIN BLOG-VERSE</h1>

@@ -13,7 +13,7 @@ const SignIn = () => {
             setShowPassword((password) => !password)
         }
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 to-blue-900 text-white font-sans  ">
+        <div className="min-h-screen bg-gradient-to-br bg-black text-white font-sans  ">
             <NavBar/>
             <div className='flex justify-center items-center h-screen  '>
                 <div className='border-2 p-3 mask-origin-fill  flex justify-center flex-col items-center rounded-4xl  border-indigo-700 h-125 w-100 border-gray-700 bg-black '>

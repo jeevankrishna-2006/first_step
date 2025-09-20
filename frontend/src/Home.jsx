@@ -32,7 +32,7 @@ const Home = () => {
                 <button className="px-10 py-4 cursor-pointer bg-blue-700 hover:bg-blue-900 shadow-md text-white rounded-md">Write a New Post</button>
                 <button className="px-10 py-4 cursor-pointer bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-md" >View My Posts</button>
             </div>
-            <div className="mt-5 flex gap-10 flex-wrap justify-center w-full rounded-lg shadow-lg pb-5">
+            <div className="mt-5 flex gap-10 flex-wrap border-white justify-center w-full rounded-lg text-shadow-purple-50 pb-5">
                 {
                     posts.map((post) => (
                         <div className="w-96 bg-white shadow-lg rounded-lg" key={post.id}>
