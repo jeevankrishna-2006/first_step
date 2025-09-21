@@ -8,7 +8,6 @@ import { Eye } from 'lucide-react';
 import { EyeOff } from 'lucide-react';
 import { useState } from 'react';
 
-
 const SignUp = () => {
     const [formData,setFormData]=useState({
         fullname:"",
@@ -62,13 +61,13 @@ const SignUp = () => {
     }
 
     return (
-        <div className=" min-h-screen  bg-gradient-to-br bg-black items-center  text-white font-sans  ">
+        <div className="min-h-screen bg-gradient-to-br bg-black text-white font-sans  ">
             <NavBar />
-            
-            <h1 className="text-3xl flex text-center  text-bold text-blue-500 w-1/3  m-15 ">JOIN BLOG-VERSE</h1>
+
+            <h1 className="text-5xl text-bold text-blue-500 flex justify-center m-15 ">JOIN BLOG-VERSE</h1>
             <p className="text-zinc-200 text-center text-semibold text-xl">create your account and start <br></br>Blogging journey today</p>
-            <div className='flex justify-center items-center w-[90%] md:w-[90%] m-9 '>
-                <form onSubmit={handleSubmit} className="flex flex-col border-2 py-5 items-center mr-7 sm:mr-'' w-[90%] h-fit gap-4  text-shadow-white bg-black">
+            <div className='flex justify-center items-center m-9 '>
+                <form onSubmit={handleSubmit} className="flex flex-col border-2 py-5 items-center w-110 h-fit gap-4 text-shadow-white bg-black">
                     <div className="w-[90%] flex flex-col gap-2 relative">
                         <p>FullName</p>
                         <input  value={formData.fullname} onChange={handleChange} type="text" name="fullname" placeholder="Enter your FullName" className=" pl-13 border-1 rounded-xl pl-2 w-full p-3 px-4 rounded-2xl focus:outline-non  focus:border-blue-950" /><User className='absolute top-12 left-2' />
@@ -94,17 +93,17 @@ const SignUp = () => {
                     </div>
                     {error && <p className='text-red-700'>{error}</p>}
                     {success && <p className='text-green-600'>{success}</p>}
-                    <div className='fiex justify-center flex col border-2 rounded items-center h-10 w-[90%]'><input className='h-5 pl-2' type="checkbox" name="" />
+                    <div className='fiex justify-center flex col border-2 rounded items-center h-10 w-95 '><input className='h-5 pl-2' type="checkbox" name="" />
                         <p >I agree to the <a href='#' className='hover:underline text-purple-500'>Terms of Service</a> and <a href="#" className='text-purple-500 hover:underline'>Privacy Policy</a></p>
 
                     </div>
                     <button type="submit" className="m-3 bg-blue-600 hover:bg-blue-700 text-white px-20 py-2 rounded-full flex justify-center align-middle "><CircleUser />Create Account</button>
-                    <div className='border-1 w-[90%]'></div>
-                    <p>Already have an account? <Link to='/SignIn' href='#' className="hover:underline text-purple-500">Sign</Link></p>
+                    <div className='border-1 w-90'></div>
+                    <p>Already have an account? <Link to="/SignIn" href='#' className="hover:underline text-purple-500">Sign IN</Link></p>
                 </form>
             </div>
         </div>
-        
+
     )
 }
 export default SignUp
