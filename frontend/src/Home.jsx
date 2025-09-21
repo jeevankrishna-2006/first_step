@@ -35,9 +35,9 @@ const Home = () => {
             <div className="mt-5 flex gap-10 flex-wrap border-white justify-center w-full rounded-lg text-shadow-purple-50 pb-5">
                 {
                     posts.map((post) => (
-                        <div className="w-96 bg-white shadow-lg rounded-lg" key={post.id}>
+                        <div className="w-96 bg-white shadow-lg transform hover:scale-105 duration-500 ease-in-out rounded-lg overflow-hidden" key={post.id}>
                             <div className="relative">
-                                <img className=" rounded-t-lg  shadow-lg h-100 w-96 " src={post.Image} alt="Writing" />
+                                <img className=" rounded-t-lg  shadow-lg transform hover:scale-105 duration-500 ease-in-out  h-100 w-96 " src={post.Image} alt="Writing" />
                                 <button className="p-3 text-sm bg-black rounded-full absolute cursor-pointer right-4 top-3">Save</button>
                             </div>
                             <div className="flex gap-5 mt-3 px-2">
