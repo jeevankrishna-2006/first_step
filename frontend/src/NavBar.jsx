@@ -13,7 +13,7 @@ const NavBar = () => {
     <div className='flex justify-evenly text-white bg-black text-2xl align-middle border-1 h-20 items-center p-2'>
             <h1><b><u>BLOG VERSE</u></b></h1>
           <div className='relative'>  
-          <Link to='/Home' className="hover:underline">
+          <Link to='/' className="hover:underline">
             Home<House className='absolute bottom-0.5 right-20 '/>
           </Link>
           </div>

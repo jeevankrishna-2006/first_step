@@ -13,7 +13,7 @@ import {  Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <Routes>
-      <Route path="/#" element={<Home/>}/>
+      <Route path="/" element={<Home/>}/>
       <Route path="/SignIn" element={<SignIn/>}/>
       <Route path="/SignUp" element={<SignUp/>}/>
       {/* <Route path="/SignIn" element={<Sign/>}/>  */}
